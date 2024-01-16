@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Admin DashBoard Design | SamProg</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <div class="menu">
+                <i class='bx bx-menu'></i>
+            </div>
+
+            <div class="header-contents">
+                <div class="content">
+                    <div class="button">
+                        <button>
+                            <i class='bx bxs-sun on' ></i>
+                            <i class='bx bxs-moon off'></i>
+                        </button>
+                    </div>
+    
+                    <div class="user-acc">
+                        <img src="./images/sam-min.jpg">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <aside>
+            <div class="logo">
+                <i class='bx bx-pulse'></i>
+                <a href="#">
+                    Sam<span>Prog</span>
+                </a>
+                <i class='bx bx-x cross'></i>
+            </div>
+        
+            <div class="aside-contents">
+                <div class="nav-links">
+                    <a href="#">
+                        <i class='bx bxs-grid-alt'></i>
+                        <span>DashBoard</span>
+                    </a>
+                    <a href="#">
+                        <i class='bx bx-user'></i>
+                        <span>Users</span>
+                    </a>
+                    <a href="#">
+                        <i class='bx bx-history'></i>
+                        <span>History</span>
+                    </a>
+                    <a href="#" class="active">
+                        <i class='bx bxs-magic-wand'></i>
+                        <span>Analytics</span>
+                    </a>
+                    <a href="#">
+                        <i class='bx bx-envelope' ></i>
+                        <span>Tickets </span>
+                        <span id="pink">27</span>
+                    </a>
+                    <a href="#">
+                        <i class='bx bx-calendar-check'></i>
+                       <span>Sale List</span>        
+                    </a>
+                    <a href="#">
+                        <i class='bx bxs-report'></i>
+                        <span>Reports</span>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxs-cog' ></i>
+                        <span>Settings</span>
+                    </a>
+                    <a href="#">
+                        <i class='bx bx-plus'></i>
+                        <span>New Login</span>
+                    </a>
+                </div>
+
+                <div class="logout">
+                    <a href="#">
+                        <i class='bx bx-log-out' ></i>
+                       <span>LogOut</span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <div class="main-contents">
+                <div class="analytics">
+                    <h1 class="sideHeading">Analytics</h1>
+                    <div class="progress-chart">
+                        <div class="analytics-contents">
+                            <div class="content">
+                                <div class="text">
+                                    <p>Total Sales</p>
+                                    <h1>$65,024</h1>
+                                </div>
+                                <div class="progress-bar">
+                                    <div></div>
+                                    <span>+81%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analytics-contents">
+                            <div class="content">
+                                <div class="text">
+                                    <p>Site Visit</p>
+                                    <h1>24,981</h1>
+                                </div>
+                                <div class="progress-bar">
+                                    <div></div>
+                                    <span>+48%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analytics-contents">
+                            <div class="content">
+                                <div class="text">
+                                    <p>Searches</p>
+                                    <h1>14,147</h1>
+                                </div>
+                                <div class="progress-bar">
+                                    <div></div>
+                                    <span>+21%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new-user">
+                    <h1 class="sideHeading">New User</h1>
+                    <div class="user-contents">
+                        <div class="user-details">
+                            <div class="user">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww">
+                            </div>
+                            <div class="user-text">
+                                <h2>Amir Dos</h2>
+                                <p>54 min Ago</p>
+                            </div>
+                        </div>
+                        <div class="user-details">
+                            <div class="user">
+                                <img src="https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D">
+                            </div>
+                            <div class="user-text">
+                                <h2>Ember Joe</h2>
+                                <p>34 min Ago</p>
+                            </div>
+                        </div>
+                        <div class="user-details">
+                            <div class="user">
+                                <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D">
+                            </div>
+                            <div class="user-text">
+                                <h2>Kathija</h2>
+                                <p>14 min Ago</p>
+                            </div>
+                        </div>
+                        <div class="user-details">
+                            <div class="user">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww">
+                            </div>
+                            <div class="user-text">
+                                <h2>Nafiah</h2>
+                                <p>24 min Ago</p>
+                            </div>
+                        </div>
+                        <div class="user-details">
+                            <div class="user">
+                                <i class='bx bx-plus'></i>
+                            </div>
+                            <div class="user-text">
+                                <h2>More</h2>
+                                <p>New User</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recent-orders">
+                    <h1 class="sideHeading">Recent Orders</h1>
+                </div>
+            </div>
+        </main>
+
+        <div class="right">
+            <div class="right-side-contents">
+                <header>
+                    <div class="header-contents">
+                     <div class="button">
+                         <button>
+                             <i class='bx bxs-sun on' ></i>
+                             <i class='bx bxs-moon off'></i>
+                         </button>
+                     </div>
+     
+                     <div class="user-acc">
+                         <p>Hey,<span> Sameer</span><br>Admin</p>
+                         <img src="./images/sam-min.jpg">
+                     </div>
+                    </div>
+                 </header>
+
+                 <div class="logo">
+                    <div class="personal-logo">
+                        <img src="images/sam-min.jpg" alt="">
+                     </div>
+                     <div class="text">
+                        <h2>SamProg</h2>
+                        <p>Passionate Web Development Enthusiast</p>
+                     </div>
+                 </div>
+
+                 <div class="reminders">
+                    <header>
+                        <h1>Reminders</h1>
+                        <i class='bx bx-bell'></i>
+                    </header>
+
+                    <div class="reminder-contents">
+                        <div class="reminder-content">
+                            <div class="content">
+                                <div class="icon">
+                                    <i class='bx bxs-volume-full'></i>
+                                </div>
+                                <div class="text">
+                                    <p>WorkShop</p>
+                                    <p>06:00 AM - 08:00 AM</p>
+                                </div>
+                            </div>
+                            <div class="more">
+                                <i class='bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="reminder-content">
+                            <div class="content">
+                                <div class="icon">
+                                    <i class='bx bx-pencil'></i>
+                                </div>
+                                <div class="text">
+                                    <p>WorkShop</p>
+                                    <p>08:00 AM - 12:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="more">
+                                <i class='bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="reminder-content">
+                            <div class="content">
+                                <div class="icon">
+                                    <i class='bx bx-pencil'></i>
+                                </div>
+                                <div class="text">
+                                    <p>WorkShop</p>
+                                    <p>10:00 AM - 1:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="more">
+                                <i class='bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="reminder-content">
+                            <div class="content">
+                                <div class="icon">
+                                    <i class='bx bx-pencil'></i>
+                                </div>
+                                <div class="text">
+                                    <p>WorkShop</p>
+                                    <p>03:00 PM - 5:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="more">
+                                <i class='bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="reminder-content">
+                            <div class="content">
+                                <div class="icon">
+                                    <i class='bx bx-pencil'></i>
+                                </div>
+                                <div class="text">
+                                    <p>WorkShop</p>
+                                    <p>06:00 PM - 7:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="more">
+                                <i class='bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="reminder-content">
+                            <div class="content">
+                                <div class="icon">
+                                    <i class='bx bx-pencil'></i>
+                                </div>
+                                <div class="text">
+                                    <p>WorkShop</p>
+                                    <p>08:00 PM - 10:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="more">
+                                <i class='bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="add-reminder">
+                        <div class="text">
+                            <i class='bx bx-plus'></i>
+                            <p>Add reminders</p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <script src="recentorders.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

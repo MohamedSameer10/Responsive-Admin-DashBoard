@@ -1,0 +1,724 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --greytextcolor: rgb(68, 68, 68);
+    --bgcolor: rgb(195, 195, 195);
+    --pinktextcolor:#C70039;
+    --blacktextcolor:rgb(28, 27, 27);
+    --redtextcolor:red;
+    --yellowtextcolor:rgb(196, 196, 3);
+    --greentextcolor:#1e8659;
+    --bluebgcolor:rgb(121, 121, 254);
+    --whitebgcolor:white;
+    --box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.darkmodevariables{
+    --whitebgcolor:rgb(19, 19, 19);
+    --blacktextcolor:rgb(212, 212, 212);
+    --greytextcolor:rgb(123, 122, 122);
+    --bgcolor: rgb(10, 10, 10);
+    --box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    object-fit: cover;
+    object-position: top;
+}
+i{
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+#pink{
+    background-color: var(--pinktextcolor);
+    color: var(--whitebgcolor);
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+body{
+    background-color: var(--bgcolor);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+}
+
+.container > header,
+.container aside .logo .cross{
+    display: none;
+}
+
+.container aside{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding: 1rem;
+    height: 100vh;
+}
+
+.container aside .logo{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.container aside .logo a{
+    font-size: 1.7rem;
+    color: var(--blacktextcolor);
+    font-weight: 700;
+}
+
+.container aside .logo i{
+    font-size: 2rem;
+    background-color: var(--whitebgcolor);
+    box-shadow: var(--box-shadow);
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.container aside .logo a span,
+.container aside .logo i{
+    color: var(--pinktextcolor);
+    font-weight: 900;
+    margin-left: 0.1rem;
+}
+
+.container aside .aside-contents{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    background-color: var(--whitebgcolor);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.container aside .aside-contents .nav-links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.container aside .nav-links a:first-child{
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.container aside .aside-contents .logout a{
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.container aside .nav-links a,
+.logout a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem 2rem;
+    color: var(--greytextcolor);
+    font-weight: 600;
+    transition: all 0.2s linear;
+}
+
+.container aside .nav-links a:hover,
+.container aside .nav-links a.active,
+.container aside .aside-contents .logout a:hover{
+    background-color: var(--bgcolor);
+    color: var(--bluebgcolor);
+    padding-left: 2.3rem;
+    position: relative;
+    font-weight: 800;
+}
+
+.container aside .nav-links a.active::before{
+    content: "";
+    width: 6px;
+    height: 30px;
+    background-color: var(--bluebgcolor);
+    position: absolute;
+    left: 0px;
+    animation: smooth 0.5s;
+}
+
+@keyframes smooth{
+    from{
+        scale: 0;
+    }
+
+    to{
+        scale: 1;
+    }
+}
+
+.logout{
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+main{
+    padding: 0.6rem 1rem;
+}
+
+main .main-contents .analytics{
+    width: 100%;
+}
+
+main .main-contents .progress-chart{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+main .main-contents .sideHeading{
+    color: var(--blacktextcolor);
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+main .main-contents .analytics .analytics-contents{
+    background-color: var(--whitebgcolor);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--box-shadow);
+}
+
+main .main-contents .analytics .analytics-contents .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0.2rem 0.5rem;
+    color: var(--blacktextcolor);
+}
+
+.text p{
+    text-align: center;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.text h1{
+    font-size: 1.7rem;
+}
+
+main .main-contents .analytics .analytics-contents .progress-bar{
+    position: relative;
+}
+
+main .main-contents .analytics .analytics-contents .progress-bar div{
+    width: 70px;
+    height: 70px;
+    border: 10px solid var(--bgcolor);
+    border-radius: 50%;
+    border-top: 10px solid var(--greentextcolor);
+    border-left: 10px solid var(--greentextcolor);
+    border-bottom: 10px solid var(--greentextcolor);
+}
+
+
+main .main-contents .analytics .analytics-contents .progress-bar span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+main .main-contents .analytics .analytics-contents:nth-child(2) .progress-bar div{
+    border-top: 10px solid var(--bgcolor);
+    border-left: 10px solid var(--pinktextcolor);
+    border-bottom: 10px solid var(--pinktextcolor);   
+}
+
+main .main-contents .analytics .analytics-contents:nth-child(3) .progress-bar div{
+    border-bottom: 10px solid var(--bgcolor);
+    border-left: 10px solid var(--bgcolor);
+    border-top: 10px solid var(--bluebgcolor);   
+}
+
+main .new-user .user-contents{
+    background-color: var(--whitebgcolor);
+    width: 100%;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.9rem 1rem;
+    box-shadow: var(--box-shadow);
+
+}
+
+main .new-user .user-contents .user img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+main .new-user .user-contents .user-details{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+main .user-details i{
+    font-size: 5.5rem;
+    font-weight: 900;
+    color: var(--greytextcolor);
+}
+main .new-user .user-contents .user-details h2{
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--blacktextcolor);
+}
+
+main .new-user .user-contents .user-details p{
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--greytextcolor);
+}
+
+main .new-user .user-contents .user-details .user-text{
+    text-align: center;
+}
+
+main table{
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    cursor: pointer;
+}
+
+main table th{
+    padding: 0.5rem 0 0.5rem 0;
+    color: var(--blacktextcolor);
+}
+main table td{
+    text-align: center;
+    padding: 0.8rem;
+    font-weight: 500;
+    color: var(--greytextcolor);
+}
+
+main table tbody .line{
+    height: 1px;
+    width: 100%;
+    background-color: var(--greytextcolor);
+}
+
+main table{
+    border-collapse: collapse;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: var(--whitebgcolor);
+} 
+
+main table td{
+    border-top: 1px solid var(--greytextcolor);
+    border-bottom: 1px solid var(--greytextcolor);
+}
+
+main table .pending{
+    color: var(--yellowtextcolor);
+    font-weight: 800;
+}
+
+main table .declined{
+    color: var(--redtextcolor);
+    font-weight: 800;
+}
+
+main table .active{
+    color: var(--greentextcolor);
+    font-weight: 800;
+}
+
+main table .details{
+    color: var(--bluebgcolor);
+}
+
+.container .right{
+    padding: 0.6rem 1rem; 
+}
+
+.container .right header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.container .right header .header-contents .user-acc img{
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+}
+
+.container .right header .header-contents,
+.container .right header .header-contents .user-acc{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.container .right header .header-contents .user-acc p{
+    color: var(--greytextcolor);
+    font-weight: 600;
+    font-size: 0.5rem;
+}
+
+.container .right header .header-contents .user-acc p span{
+    color: var(--blacktextcolor);
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+.container .right header .header-contents .button button i,
+.container > header .header-contents .button button i{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 0.5rem; */
+    padding: 0.2rem 0.4rem;
+}
+
+.container .right header .header-contents .button button,
+.container > header .header-contents .button button{
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.container .right header .header-contents .button button i:first-child,
+.container > header .header-contents .button button i:first-child{
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+
+.container .right header .header-contents .button button i:last-child,
+.container > header .header-contents .button button i:last-child{
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.container .right header .header-contents .button button .on,
+.container > header .header-contents .button button .on{
+    background-color: var(--bluebgcolor);
+    color: rgb(222, 222, 222);
+}
+
+.container .right header .header-contents .button button .off,
+.container > header .header-contents .button button .off{
+    background-color: rgb(184, 184, 184);
+}
+
+
+.container .right .logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+    background-color: var(--whitebgcolor);
+    margin-top: 1rem;
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+}
+
+.container .right .logo img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.container .right .text{
+    text-align: center;
+}
+
+.container .right .logo h2{
+    font-size: 1.8rem;
+    color: var(--blacktextcolor);
+}
+
+.container .right .text p{
+    color: var(--greytextcolor);
+}
+
+.container .right .reminders header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .right .reminders header h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--blacktextcolor);
+}
+
+.container .right .reminders header i{
+    background-color: var(--whitebgcolor);
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--blacktextcolor);
+    cursor: pointer;
+}
+
+.container .right .reminder-contents .reminder-content{
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--whitebgcolor);
+    border-radius: 1rem;
+    margin-top: 0.8rem;
+    padding: 1rem;
+    display: none;
+}
+
+.container .right .reminder-contents .reminder-content:nth-child(1),
+.container .right .reminder-contents .reminder-content:nth-child(2){
+    display: flex;
+}
+
+
+
+.container .right .reminder-content .content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .right .reminder-content .icon i{
+    padding: 0.6rem;
+    background-color: var(--greentextcolor);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.container .right .reminder-content:nth-child(even) .icon i{
+    background-color: var(--pinktextcolor);
+}
+
+.container .right .reminder-content .text p,
+.container .right .reminder-content .more i{
+    color: var(--blacktextcolor);
+}
+
+.container .right .reminder-content .text p:first-child{
+    font-weight: bold;
+    text-align: left;
+}
+
+
+.container .right .reminder-content .more i{
+    font-size: 2rem;
+}
+
+.container .right .add-reminder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--whitebgcolor);
+    margin-top: 0.8rem;
+    border-radius: 1rem;
+    border: 3px dotted var(--bluebgcolor);
+    padding: 1rem;
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+
+.container .right .add-reminder .text{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.container .right .add-reminder .text i,
+.container .right .add-reminder .text p{
+    color: var(--bluebgcolor);
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.5s linear;
+}
+
+.container .right .add-reminder:hover{
+    background-color: var(--bluebgcolor);
+}
+
+.container .right .add-reminder:hover .text i,
+.container .right .add-reminder:hover .text p{
+    color: var(--whitebgcolor);
+}
+
+
+@media screen and (max-width : 1353px){
+
+    .container{
+        grid-template-columns: 1fr 2fr 4fr;
+    }
+}
+
+@media screen and (max-width : 1273px){
+    .container aside .aside-contents a{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width : 1173px){
+
+    .container{
+        height: 100%;
+        grid-template-columns: 110px 4fr 2fr;
+    }
+
+    .container aside{
+        gap: 50px;
+    }
+
+    .container aside .aside-contents a span{
+        display: none;
+    }
+
+    .container main{
+        padding-top: 3.3rem;
+    }
+
+    .container main .analytics .progress-chart{
+        flex-direction: column;
+    }
+
+    .container aside,
+    .container aside .aside-contents{
+        height: fit-content;
+    }
+
+    .container .right .reminder-contents .reminder-content{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 820px) {
+
+    .container .right header{
+        display: none;
+     }
+
+    .container .menu{
+        cursor: pointer;
+    }
+
+     .container aside{
+        position: fixed;
+        left: -100%;
+        z-index: 1000;
+     }
+
+     .container{
+        grid-template-columns: 1fr;
+     }
+
+     .container .header{
+        width: 100%;
+        background-color: var(--whitebgcolor);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 2rem;
+     }
+
+     .container > header .menu i{
+        font-size: 3.5rem;
+        color: var(--blacktextcolor);
+     }
+     .container > header .header-contents .content{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+     }
+
+     .container > header .header-contents img{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+     }
+
+     .container > header .header-contents .user-acc{
+        display: flex;
+        align-items: center;
+     }
+
+     .container aside{
+        background-color: var(--whitebgcolor);
+        height: 100vh;
+        transition: all 0.5s linear;
+     }
+
+     .container .move{
+        left: 0;
+     }
+
+     .container aside .aside-contents{
+        height: 100vh;
+     }
+
+     .container aside .logo .cross,
+     .container aside .aside-contents a span{
+        display: block;
+        cursor: pointer;
+     }
+}
+
+@media screen and (max-width:470px) {
+    main .new-user .user-contents .user-details img{
+        width: 50px;
+        height: 50px;
+    }
+
+    main .new-user .user-contents .user-details .user i{
+        font-size: 4rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
