@@ -545,6 +545,7 @@ main table .details{
     padding: 1rem;
     transition: all 0.5s linear;
     cursor: pointer;
+    box-shadow: var(--box-shadow);
 }
 
 .container .right .add-reminder .text{
