@@ -58,6 +58,13 @@ const orders = [
         courseNumber : 54635,
         payment : "Paid",
         status : "Active"
+    },
+    {
+        courseName : "HTML Tutorial",
+        courseNumber : 54635,
+        payment : "Paid",
+        status : "Pending"
     }
+    
     
 ]
